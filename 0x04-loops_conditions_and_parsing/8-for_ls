@@ -1,0 +1,9 @@
+#!/bin/bash
+# Lists files in the current directory and prints only the part after the first dash
+
+for file in *; do
+    # Skip hidden files (the '*' pattern already avoids them)
+    
+    # Print only the part after the first dash
+    echo "${file#*-}"
+done
