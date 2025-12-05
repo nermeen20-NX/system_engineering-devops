@@ -1,0 +1,20 @@
+#!/bin/bash
+# Displays numbers from 1 to 20 with specific "bad luck" messages for certain numbers
+
+i=1  # Initialize counter
+
+while [ $i -le 20 ]; do
+    echo "$i"  # Print the current number
+    case $i in
+        4)
+            echo "bad luck from China"
+            ;;
+        9)
+            echo "bad luck from Japan"
+            ;;
+        17)
+            echo "bad luck from Italy"
+            ;;
+    esac
+    ((i++))  # Increment counter
+done
