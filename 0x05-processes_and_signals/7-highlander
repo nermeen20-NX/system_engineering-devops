@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
-# Beheaded process
+# Highlander
 
-pgrep -f 7-highlander | xargs kill -9
+# print I am invincible!!! when receiving a SIGTERM signal
+trap "echo I am invincible!!!" SIGTERM
+
+while true; do
+  echo "To infinity and beyond"
+  sleep 2
+done;
