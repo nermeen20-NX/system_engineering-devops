@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# A Bash script that handles SIGTERM by displaying a message and continuing its loop
-
-# Trap SIGTERM (signal 15) and execute the echo command
+# A Bash script that displays a message when receiving a SIGTERM signal
 trap "echo 'I am invincible!!!'" SIGTERM
 
 while true
