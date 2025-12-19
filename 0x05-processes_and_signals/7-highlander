@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# A Bash script that handles SIGTERM by displaying a message and continuing its loop
+
+# Trap SIGTERM (signal 15) and execute the echo command
+trap "echo 'I am invincible!!!'" SIGTERM
+
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
